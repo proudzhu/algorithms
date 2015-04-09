@@ -1,10 +1,13 @@
 import unittest
-from ..data_structure import stack,queue
+from ..data_structure import stack, queue
+
 
 class TestStack(unittest.TestCase):
+
     """
     Test Stack Implementation
     """
+
     def test_stack(self):
         self.sta = stack.stack()
         self.sta.add(5)
@@ -12,14 +15,17 @@ class TestStack(unittest.TestCase):
         self.sta.add(10)
         self.sta.add(2)
 
-        self.assertEqual(self.sta.remove(),2)
-        self.assertEqual(self.sta.is_empty(),False)
-        self.assertEqual(self.sta.size(),3)
-        
+        self.assertEqual(self.sta.remove(), 2)
+        self.assertEqual(self.sta.is_empty(), False)
+        self.assertEqual(self.sta.size(), 3)
+
+
 class TestQueue(unittest.TestCase):
+
     """
     Test Queue Implementation
     """
+
     def test_queue(self):
         self.que = queue.queue()
         self.que.add(1)
