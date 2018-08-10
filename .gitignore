@@ -7,3 +7,7 @@ build/
 *~
 /dist/
 /*.egg-info
+*.ropeproject/
+docs/_build
+.idea/*
+.cache/

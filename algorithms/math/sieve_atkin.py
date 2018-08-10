@@ -1,14 +1,10 @@
 """
-    sieve_atkin.py
-
-    Implementation of the Sieve of Eratosthenes algorithm.
-
-    Sieve of Atkin Overview:
-    ------------------------
+    Sieve of Atkin
+    --------------
     It is an optimized version of the ancient sieve of Eratosthenes
     which does some preliminary work and then marks off
-    multiples of the square of each prime, rather than multiples of the prime itself.
-    It was created in 2004 by A. O. L. Atkin and Daniel J. Bernstein.
+    multiples of the square of each prime, rather than multiples of the prime
+    itself. It was created in 2004 by A. O. L. Atkin and Daniel J. Bernstein.
 
     Time Complexity: O(n/log log n)
 
@@ -18,6 +14,10 @@ from math import sqrt
 
 
 def atkin(limit):
+    """
+    :param limit: The upper limit in which to find all primes less than this
+                  value.
+    """
     if limit == 2:
         return [2]
     if limit == 3:

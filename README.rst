@@ -1,73 +1,34 @@
+**This repository is no longer maintained, but is being kept around for educational purposes. If you want a more complete algorithms repo check out: https://github.com/keon/algorithms**
+=====
+
 Algorithms
 ==========
 
-This is an attempt to build a cohesive module of algorithms in Python.
+.. image:: https://travis-ci.org/nryoung/algorithms.svg?branch=master
+    :target: https://travis-ci.org/nryoung/algorithms
 
-The purpose of this repo is to be a learning tool for myself and others.
+.. image:: http://codecov.io/github/nryoung/algorithms/coverage.svg?branch=master
+    :target: http://codecov.io/github/nryoung/algorithms?branch=master
 
-I used psuedo code from various sources and I have listed them as references in the source code of each algorithm.
+.. image:: https://readthedocs.org/projects/algorithms/badge/?version=latest
+    :target: http://algorithms.readthedocs.org/en/latest/?badge=latest
 
-Algorithms implemented so far:
-------------------------------
+.. image:: https://badge.fury.io/py/algorithms.svg
+    :target: https://badge.fury.io/py/algorithms
 
-**Data Structures:**
+Algorithms is a library of algorithms and data structures implemented in Python.
 
-- Queue
-- Stack
+The main purpose of this library is to be an educational tool. You probably
+shouldn't use these in production, instead, opting for the optimized versions of
+these algorithms that can be found else where.
 
-**Sorting:**
+You should totally check out the `docs`_ for implementation details, complexities
+and further info.
 
-- Bogo Sort
-- Bubble Sort
-- Cocktail Sort
-- Comb Sort
-- Heap Sort
-- Insertion Sort
-- Merge Sort
-- Quick Sort
-- In Place Quick Sort
-- Selection Sort
-- Shell Sort
-- Gnome Sort
+Usage
+-----
 
-**Searching:**
-
-- Binary Search
-- Boyer-Moore-Horspool
-- Knuth-Morris-Pratt
-- Rabin-Karp
-- Depth First Search (Recursive)
-
-**Shuffling:**
-
-- Knuth/Fisher-Yates Shuffle
-
-**Math:**
-
-- Extended GCD
-- Standard Normal Probability Density Function
-- Cumulative Density Function (Approximation; 16 digit precision for 300 iter.)
-
-**Random:**
-
-- Mersenne Twister
-
-
-Installation:
--------------
-
-If you want to use the algorithms directly, simply
-
-::
-
-    $ pip install algorithms
-
-If you want to examine the algorithms source, then you should clone this repo.
-
-Usage:
-------
-
-Once installed you can simply do the following in your program:
+If you want to use the algorithms in your code it is as simple as:
 
 ::
 
@@ -75,50 +36,38 @@ Once installed you can simply do the following in your program:
 
     my_list = bubble_sort.sort(my_list)
 
+Features
+--------
 
-All prequisites for the algorithms are listed in the source code for each algorithm.
+- Pseudo code, algorithm complexities and futher info with each algorithm.
+- Test coverage for each algorithm and data structure.
+- Super sweet `documentation`_.
+
+Installation:
+-------------
+
+Installation is as easy as:
+
+::
+
+    $ pip install algorithms
 
 
 Tests:
 ------
 
-Nose is used as the main test runner and all Unit Tests can be run by:
+Pytest is used as the main test runner and all Unit Tests can be run with:
 
 ::
 
-    $ python algorithms/run_tests.py
+    $ ./run_tests.py
 
 
 Contributing:
 -------------
 
-If there is an algorithm or data structure that you do not see, but would like to add please feel free to do a pull request. I only ask two things:
+Contributions are always welcome. Check out the contributing guidelines to get
+started.
 
-1. For each algorithm and data structure you implement please have corresponding unit tests to prove correctness.
-2. Please make sure that your module follows similar style guidelines that are laid out in the other modules.
-
-I want to personally thank everybody that has contributed so far and your names will be added to `AUTHORS.rst`.
-
-
-TODO:
------
-
-See `TODO.rst`.
-
-
-License:
---------
-
-Copyright (c) 2012 by Nic Young and contributors. See AUTHORS.rst for more details
-
-Some rights reserved.
-
-Redistribution and use in source and binary forms of the software as well as documentation, with or without modification, are permitted provided that the following conditions are met:
-
-* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-
-* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-
-* The names of the contributors may not be used to endorse or promote products derived from this software without specific prior written permission.
-
-THIS SOFTWARE AND DOCUMENTATION IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE AND DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+.. _`docs`: http://algorithms.readthedocs.org/en/latest/
+.. _`documentation`: http://algorithms.readthedocs.org/en/latest/

@@ -1,5 +1,6 @@
 import unittest
-from ..random import mersenne_twister
+
+from algorithms.random import mersenne_twister
 
 
 class TestMersenneTwister(unittest.TestCase):
@@ -14,9 +15,11 @@ class TestMersenneTwister(unittest.TestCase):
 
         # Test seed 1
         mt.seed(1)
-        self.expected = [1791095845, 4282876139, 3093770124,
-                         4005303368, 491263, 550290313, 1298508491,
-                         4290846341, 630311759, 1013994432]
+        self.expected = [
+            1791095845, 4282876139, 3093770124,
+            4005303368, 491263, 550290313, 1298508491,
+            4290846341, 630311759, 1013994432
+        ]
         self.results = []
         for i in range(10):
             self.results.append(mt.randint())
@@ -24,9 +27,11 @@ class TestMersenneTwister(unittest.TestCase):
 
         # Test seed 42
         mt.seed(42)
-        self.expected = [1608637542, 3421126067, 4083286876,
-                         787846414, 3143890026, 3348747335,
-                         2571218620, 2563451924, 670094950, 1914837113]
+        self.expected = [
+            1608637542, 3421126067, 4083286876,
+            787846414, 3143890026, 3348747335,
+            2571218620, 2563451924, 670094950, 1914837113
+        ]
         self.results = []
         for i in range(10):
             self.results.append(mt.randint())
@@ -34,9 +39,11 @@ class TestMersenneTwister(unittest.TestCase):
 
         # Test seed 2147483647
         mt.seed(2147483647)
-        self.expected = [1689602031, 3831148394, 2820341149,
-                         2744746572, 370616153, 3004629480,
-                         4141996784, 3942456616, 2667712047, 1179284407]
+        self.expected = [
+            1689602031, 3831148394, 2820341149,
+            2744746572, 370616153, 3004629480,
+            4141996784, 3942456616, 2667712047, 1179284407
+        ]
         self.results = []
         for i in range(10):
             self.results.append(mt.randint())

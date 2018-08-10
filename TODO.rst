@@ -11,13 +11,11 @@ Below is an ever changing list of things that I would like to accomplish or impl
         - Binary Tree Sort
         - Cycle Sort
         - Smoothsort
-        - Strand Sort
     - Divide and Conquer
         - Maximum Subarray
         - Strassen's Matrix Multiplication
     - *k*-Selection (Minimum, Maximum, Median, Arbitrary *k*)
     - Data Structures
-        - Linked Lists
         - Hash Tables
         - Binary Search Trees
         - Red-Black Trees
@@ -26,7 +24,6 @@ Below is an ever changing list of things that I would like to accomplish or impl
         - van Emde Boas Trees
     - Dynamic Programming
         - Matrix-Chain Multiplication
-        - Longest Common Subsequence
     - Huffman Encoding
     - Graph Algorithms
         - Breadth-First Search
@@ -57,7 +54,7 @@ Below is an ever changing list of things that I would like to accomplish or impl
             - Sequential Backward Selection (SFS)
             - 'plus l take away r' - algorithm (SBS + SFS)
             - Sequential Floating Forward Algorithm (SFFS)
-            
+
 
 
 **Misc.:**
