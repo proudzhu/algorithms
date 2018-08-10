@@ -28,7 +28,9 @@ class MersenneTwister:
         self.state.append(seed)
         for i in range(1, 624):
             n = (
-                0x6c078965 * (self.state[i - 1] ^ (self.state[i - 1] >> 30)) + i)
+                0x6c078965 * (self.state[i - 1] ^ (self.state[i - 1] >> 30)) +
+                i
+                )
             n &= 0xffffffff
             self.state.append(n)
 

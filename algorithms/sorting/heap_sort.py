@@ -24,15 +24,15 @@ def max_heapify(seq, i, n):
               root of a subtree that max heapify is called on.
     :param n: length of the list
     """
-    l = 2 * i + 1
-    r = 2 * i + 2
+    left = 2 * i + 1
+    right = 2 * i + 2
 
-    if l <= n and seq[l] > seq[i]:
-        largest = l
+    if left <= n and seq[left] > seq[i]:
+        largest = left
     else:
         largest = i
-    if r <= n and seq[r] > seq[largest]:
-        largest = r
+    if right <= n and seq[right] > seq[largest]:
+        largest = right
 
     if largest != i:
         seq[i], seq[largest] = seq[largest], seq[i]
